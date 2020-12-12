@@ -1,0 +1,55 @@
+<!-- javaScript包含三个部分，ECMAScript、DOM、BOM 三个标准
+
+JS解释型语言，动态语言，基于原型的面向对象 -->
+
+<html>
+<head>
+<meta charset = 'UTF-8'>
+</head>
+<body>
+    <script type="text/javascript">
+// 控制浏览器弹出警告框 （alert弹出警告框
+// alert("这是我的第一行JS代码")
+
+
+
+// 在页面中输出一个内容
+// document.write()的作用是向body中写入一个内容
+// document.write('AAA');
+
+// 向控制台输出一个内容
+// console.log();
+
+
+// 这三者的执行顺序是alert>document.write()>console.log();
+
+    </script>
+
+
+<!-- JS代码可以直接写在按钮中而不需要<script>标签就能执行
+  虽然可以写在标签属性中，但是他们属于结构与行为耦合，不方便维护没不推荐使用  
+
+-->
+
+<button onclick = 'alert("来啊试试看哪");'>登龙剑</button>
+
+
+<!-- 同样的JS代码也可以写在herf属性中，当点击超链接时，js代码就会执行 -->
+<a href="javascript:alert('让你点');">来啊试试看哪
+
+
+    <!-- 在head中通过scrip标签通过src指向外部文件从而引入外联的js文件
+    写在外部可以在不同的页面中同时引用，也可以利用到浏览器的缓存机制
+    -->
+</a>
+
+
+
+
+
+
+</body>
+
+
+
+</html>
