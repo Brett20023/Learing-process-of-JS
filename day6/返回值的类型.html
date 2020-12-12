@@ -1,0 +1,77 @@
+<html>
+
+<head></head>
+
+<body>
+
+</body>
+
+
+<script type="text/javascript">
+
+    /*
+    
+    */
+    function fun() {
+        alert("函数要执行了~~~~")
+        for (var i = 0; i < 5; i++) {
+            console.log(i);
+            if(i==2){
+                // 使用break可以跳出当前循环
+                // break;
+
+                // contiunue跳过当次循环
+
+                // 使用return可以跳出整个函数
+                // 即如果在这个if中使用了return那么后面的alert就不会执行
+                // 返回值可以是任意的数据类型，也可以是一个对象，也可以是一个函数
+            }
+        }
+        alert("函数执行完了")
+
+
+    }
+
+fun();
+
+    /*
+
+ */
+
+function fun3(){
+function fun4(){
+alert('123456')
+}
+return fun4
+}
+
+a = fun3
+// 在这里如果调用a()或者fun3()()和在fun3的return中给fun4加上()的效果是一样的
+
+
+    /*
+立即执行函数：匿名函数
+        -特点：只调用一次
+        -函数定义完立即会执行
+        -给立即执行函数传参要写在其后的括号中
+
+*/
+// (function(){
+//     alert('爷是匿名函数');
+// })();
+
+// (function(a,b){
+//     console.log("a = " + a);
+//     console.log("b = "+b);
+// })(123,456)
+
+    /*
+  
+    */
+
+
+
+
+</script>
+
+</html>

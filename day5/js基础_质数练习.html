@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id='app'>
+
+    </div>
+    <script type="text/javascript">
+        // 在页面中接收一个用户输入的数字，并判断该数是否是质数
+        var num = prompt('请输入一个大于1的整数')
+        // 判断该值是否合法
+        if (num < 1) {
+            alert('该值不合法')
+        } else {
+            var flag = true
+            // 判断num是否是质数
+            for (a = 1; a < num; a++) {
+                if (num % a == 0) {
+                    flag = false
+                } 
+            }
+            if(flag == true){
+                alert(num + '是质数')
+            }else{
+                alert(num + '不是质数')            }
+        }
+    </script>
+</body>
+
+</html>

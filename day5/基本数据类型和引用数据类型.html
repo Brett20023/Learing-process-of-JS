@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id='app'>
+
+    </div>
+    <script type="text/javascript">
+/*
+基本数据类型
+ String Number Boolean Null Undefind
+
+ 引用数据类型
+ Obejct
+*/
+
+var a = 123;
+var b = a;
+a++;
+// 此时增加的只有a一个值的变化不会影响到另外一个值
+
+var obj = new Object();
+obj.name = '孙悟空';
+var obj2 = obj
+obj.name = '齐天大圣'
+
+console.log(obj.name);
+console.log(obj2.name);
+// 而此时当obj中的数据发生改变时，obj2中的数据也会随之改变
+
+/*
+JS中的变量都是保存到栈内存中的，基本数据类型的值直接在栈内存中存储
+值与值之间是独立存在的，修改一个变量不会影响其他变量
+
+对象是保存在堆内存的，每创建一个新对象就会在堆内存中创建一个新的空间
+而变量保存的是对象的内存地址（对象的引用），如果两个变量保存的是同一个
+对象引用，当一个通过一个变量修改属性时，另一个也会受到影响
+
+当比较两个基本数据类型的值时，就是在直接比较值
+而档比较两个引用类型数据时，他是比较的对象的内存地址
+   如果两个对象一模一样，但是内存地址不同也会返回false
+
+*/
+
+
+    </script>
+</body>
+
+</html>

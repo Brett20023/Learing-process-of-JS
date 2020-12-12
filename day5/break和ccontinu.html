@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id='app'>
+
+    </div>
+    <script type="text/javascript">
+        // 不能在if语句中使用break
+        // break关键字可以退出switch或循环语句
+        // if中不能使用break
+        // for (var i = 0; i < 5; i++) {
+        //     console.log(i);
+        //     if (i == 2) {
+        //         break
+        //     }
+        // }
+for(i=0;i<5;i++){
+    console.log('外层循环');
+    for(j=0;j<5;j++){
+        break
+        //continue跳过当次循环（只跳过一次），break跳过当前循环（直接退出循环
+        // 这两个函数都只对最近的循环产生影响
+console.log('内层循环');
+    }
+    // 测试程序性能可以使用console.tmie()来开启计时器，他需要一个字符串作为参数，这个字符串将会作为计数器的标识
+// 同样的在程序结尾使用console.timeEnd()来关闭计时器输出时间
+
+// 可以使用math.sqrt()对其进行开方
+}
+    </script>
+</body>
+
+</html>
